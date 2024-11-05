@@ -1,12 +1,9 @@
-// import { ref, computed } from 'vue'
-// import { defineStore } from 'pinia'
+import { defineStore } from 'pinia';
 
-// export const useCounterStore = defineStore('counter', () => {
-//   const count = ref(0)
-//   const doubleCount = computed(() => count.value * 2)
-//   function increment() {
-//     count.value++
-//   }
-
-//   return { count, doubleCount, increment }
-// })
+export const useArrayLetters = defineStore('arrayLetters', {
+    state: () => ({
+        arrayLetters: [
+            'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'
+        ]
+    })
+});
