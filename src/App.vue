@@ -1,18 +1,20 @@
 <template>
   <main>
+    <!-- header -->
     <header>
-      <componentHeader />
+      <Header />
     </header>
+    <!-- alphabet -->
     <section>
-      <componentAlphabet />
+      <ListLetters />
     </section>
   </main>
 </template>
 
 <script setup>
 import { ref } from "vue";
-import componentHeader from "./components/componentHeader.vue";
-import componentAlphabet from "./components/componentAlphabet.vue";
+import Header from "./components/Header.vue";
+import ListLetters from "./components/ListLetters.vue";
 import { useArrayLetters } from "./stores/counter";
 
 </script>
